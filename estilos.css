@@ -1,0 +1,84 @@
+/* Reglas comunes */
+    /* Colores y Fuentes de letra */
+    :root {
+        --color-texto-main: #3B2F19;
+        --color-fondo-main: #F9FFE0;
+
+        --fuente-sin-serifa: "Helvetica, Arial", sans-serif;
+    }
+    
+    
+    /* Resetear márgenes y espaciados de todos los elementos */
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        /* incluye los bordes en el width y height */
+        box-sizing: border-box;
+    }
+    
+    body {
+        /* Fuente por defecto */
+        font-family: var(--fuente-sin-serifa);
+        font-weight: normal;
+        font-size: small;
+        text-align: justify;
+        line-height: 1.5;
+        color: var(--color-texto-main);
+        
+        /* Color fondo */
+        background-color: var(--color-fondo-main);
+        
+        height: 100vh;
+        min-width: 400px;
+        /* Flexbox */
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    
+    /* Contenedor */
+    .contenedor {
+        margin: auto;
+        padding: 15px;                        
+        width: 100%;
+        height: 100%;
+
+        text-align: center;
+                
+        /* Flexbox */
+        flex: 1;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    
+    header .contenedor, 
+    footer .contenedor {
+        background-color: #4BB861;
+        
+        line-height: 2;
+        text-align: center;
+        font-weight: bold;
+        
+        /* Flexbox */
+        align-items: center;
+    }
+
+    video {
+        width: 70%;
+        min-height: 400px;
+        padding: 15px;
+        
+        /* Flexbox */
+        align-self: center;
+        
+        display: flex;
+        flex-direction: column;        
+        justify-content: space-between;
+    }
+    
+  
